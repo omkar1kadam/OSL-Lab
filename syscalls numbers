@@ -1,0 +1,15 @@
+📌 File I/O
+0 → read
+1 → write
+2 → open
+3 → close
+📌 Process control
+57 → fork
+59 → execve
+60 → exit
+61 → wait4
+📌 Memory
+9 → mmap
+12 → brk
+📌 Info / misc
+39 → getpid
