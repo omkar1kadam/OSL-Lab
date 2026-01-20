@@ -1,0 +1,12 @@
+  GNU nano 6.2                                                    shellscript.sh                                                              
+echo "=============================="
+echo "System info: $(uname -a)"
+echo "=============================="
+
+echo "Kernal info: $(uname -r)"
+echo "=============================="
+cat /etc/os-release
+
+echo "=============================="
+echo "chmod +x shellscript.sh"
+echo "./shellscript.sh"
