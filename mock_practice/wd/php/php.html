@@ -1,0 +1,38 @@
+<html>
+  <head> </head>
+  <body>
+    <form method="POST" action="omkar_login.php">
+      First Name:
+      <input type="text" name="fname" required /><br /><br />
+      Last Name:
+      <input type="text" name="lname" required /><br /><br />
+      AGE:
+      <input type="number" name="age" /><br /><br />
+      Gender:<br />
+      <input type="radio" name="gender" value="MALE" />MALE<br /><br />
+      <input type="radio" name="gender" value="FEMALE" />FEMALE<br /><br />
+      EMAIL:
+      <input type="email" name="email" /><br /><br />
+      ADDRESS:
+      <input type="text" name="address" /><br /><br />
+      BRANCH:<br />
+      <input type="radio" name="branch" value="CSE" />CSE<br /><br />
+      <input type="radio" name="branch" value="NOT CSE" />NOT CSE<br /><br />
+      DIVISON:<br />
+      <input type="radio" name="division" value="A" />A<br /><br />
+      <input type="radio" name="division" value="B" />B<br /><br />
+      YEAR:
+      <input type="number" name="year" /><br /><br />
+      Skills:<br />
+      <input type="checkbox" name="skills[]" value="PHP" />PHP<br /><br />
+      <input type="checkbox" name="skills[]" value="JAVA" />JAVA<br /><br />
+      <input type="checkbox" name="skills[]" value="HTML" />HTML<br /><br />
+      <input type="checkbox" name="skills[]" value="CSS" />CSS<br /><br />
+
+      DOB:<br />
+      <input type="date" name="dob" /><br /><br />
+
+      <input type="submit" name="submit" value="save in db" />
+    </form>
+  </body>
+</html>
