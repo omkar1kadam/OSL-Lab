@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <script>
+
+        function validateLogin() {
+
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+
+            if (user == "" || pass == "") {
+                alert("All fields required");
+                return false;
+            }
+
+            alert("Login Successful");
+
+            return false;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Login</h2>
+
+    <form onsubmit="return validateLogin()">
+
+        Username/Email:
+        <input type="text" id="user"><br><br>
+
+        Password:
+        <input type="password" id="pass"><br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+</body>
+
+</html>

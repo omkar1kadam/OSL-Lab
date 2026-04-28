@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+
+    <script>
+
+        function validateSignup() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+            let cpass = document.getElementById("cpass").value;
+
+            if (name == "" || email == "" || user == "" || pass == "" || cpass == "") {
+                alert("All fields mandatory");
+                return false;
+            }
+
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (!email.match(emailPattern)) {
+                alert("Invalid Email");
+                return false;
+            }
+
+            if (pass.length < 8) {
+                alert("Password minimum 8 chars");
+                return false;
+            }
+
+            if (pass != cpass) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            alert("Signup Successful");
+
+            return false;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Signup Form</h2>
+
+    <form onsubmit="return validateSignup()">
+
+        Name:
+        <input type="text" id="name"><br><br>
+
+        Email:
+        <input type="text" id="email"><br><br>
+
+        Username:
+        <input type="text" id="user"><br><br>
+
+        Password:
+        <input type="password" id="pass"><br><br>
+
+        Confirm Password:
+        <input type="password" id="cpass"><br><br>
+
+        <input type="submit" value="Signup">
+
+    </form>
+
+</body>
+
+</html>
