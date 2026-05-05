@@ -104,7 +104,7 @@ class GraphLandmarks{
 			cin>>n;
 
 			while(flag){
-				cout<<"Enter the souce";
+				cout<<"Enter the source";
 				cin>>s;
 				cout<<"Enter the destination";
 				cin>>d;
